@@ -16,3 +16,23 @@
 .SwipContainer .SwipSingle .swiper-button-prev {
   color: red;
 }
+.SwipContainer .swiper-button-prev {
+  color: #ffffff;
+  background-color: rgba(23, 25, 29, 0.5);
+  border-radius: 360px;
+  width: 40px;
+  height: 40px;
+}
+.SwipContainer .swiper-button-prev:after {
+  font-size: 20px;
+}
+.SwipContainer .swiper-button-next {
+  color: #ffffff;
+  background-color: rgba(23, 25, 29, 0.5);
+  border-radius: 360px;
+  width: 40px;
+  height: 40px;
+}
+.SwipContainer .swiper-button-next:after {
+  font-size: 20px;
+}

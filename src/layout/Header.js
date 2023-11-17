@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../layout/images/Screenshot_6.png'
+import logo from './images/header_menu-logo.svg'
 import icon1 from './images/manicon.svg'
 import icon2 from './images/hearticon.svg'
 import icon3 from './images/carticon.svg'
@@ -12,17 +12,32 @@ const Header = () => {
       <nav className='container'>
         <div className='NavLeft'><Link to={'/'}><img src={logo} alt="nimadir" /></Link></div>
         <div className='NavCenter'>
-          <button className='btn1'>Katalog</button>
-          <input type="text" placeholder='Maxsulotlar va turkumlar izlash' />
+          {/* <button className='btn1'>Katalog</button> */}
+          {/* <input type="text" placeholder='Maxsulotlar va turkumlar izlash' /> */}
         </div>
         <div className='NavRight'>
-          <ul>
-            <li><img src={icon1} alt="" /> <Link to={'../Contact'}>Kirish</Link></li>
-            <li><img src={icon2} alt="" /><Link to={'../Sorted'}>Saralanganlar</Link></li>
-            <li><img src={icon3} alt="" /><Link to={'../SinglePage'}>Savat</Link></li>
-          </ul>
+          <div>
+            <ul>
+              <li><Link to={'../SinglePage'}>Мужское</Link></li>
+              <li><Link to={'../SinglePage'}>Женское</Link></li>
+              <li> <Link to={'../Contact'}>Детские</Link></li>
+              <li><Link to={'../Sorted'}>Сделка</Link></li>
+              <li><Link to={'../Sorted'}>Безопасная</Link></li>
+              <li><Link to={'../Sorted'}>Правило Пользование</Link></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><Link to={'../SinglePage'}><img src={icon2} alt="" /></Link></li>
+              <li><Link to={'../SinglePage'}><img src={icon1} alt="" /></Link></li>
+              <li><button><Link to={'../SinglePage'}>Contact Us</Link></button></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div className="container navbottom">
+        <input type="text" placeholder='Поиск продукта, бренда или продавца... Поиск продукта, бренда или продавца... Поиск продукта, бренда или продавца... '/>
+      </div>
     </header>
   )
 }

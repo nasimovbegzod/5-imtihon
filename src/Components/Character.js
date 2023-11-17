@@ -5,8 +5,10 @@ import './Character.scss'
 const Character = ( { character } ) => {
   const [ heart, setheart ] = useState( "🤍" );
   const fun1 = () => {
-    setheart( '💜' )
+     setheart( '💜' )  
   }
+  
+  
   return (
     <div className="Section-1 container">
       <div className="Card" >

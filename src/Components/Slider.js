@@ -4,6 +4,10 @@ import '../Global.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import Slideimg1 from '../Hero_section.png';
+import Slideimg2 from '../Hero_section (1).png';
+import Slideimg3 from '../Hero_section (2).png';
+
 // Import Swiper styles
 import 'swiper/css';
 
@@ -28,18 +32,18 @@ const Slider = () => {
       >
 
       <SwiperSlide className="SwipSingle">
-            <img src="https://images.uzum.uz/cfv22hfhj8j9g698o2c0/main_page_banner.jpg" alt="" />
+            <img src={Slideimg1} alt="" />
       </SwiperSlide>
 
       <SwiperSlide className="SwipSingle">
-            <img src="https://images.uzum.uz/cg4o7hfg49devoaa3j60/main_page_banner.jpg" alt="" />      </SwiperSlide>
+            <img src={Slideimg3} alt="" />      </SwiperSlide>
 
       <SwiperSlide className="SwipSingle">
-             <img src="https://images.uzum.uz/cg7c92vg49devoaaf0p0/main_page_banner.jpg" alt="" />
+            <img src={Slideimg2} alt="" />
       </SwiperSlide>
 
       <SwiperSlide className="SwipSingle">
-            <img src="https://images.uzum.uz/cg0921nhgiov1qidepjg/main_page_banner.jpg" alt="" />
+            <img src={Slideimg1} alt="" />
       </SwiperSlide>
     </Swiper>
       </div>
